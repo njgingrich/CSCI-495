@@ -8,9 +8,8 @@
 // @copyright    2015+
 // ==/UserScript==
 
-$('li a').removeAttr('href');
-
 $('li a').click(function(){
+    $(this).removeAttr('href');
     var initials = $(this).find('span.initials').text();
     if (initials.indexOf("S") > -1 || initials.indexOf("s") > -1) {
         $(this).css("background-color", "pink");
