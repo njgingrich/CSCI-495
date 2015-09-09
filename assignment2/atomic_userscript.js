@@ -14,5 +14,7 @@ $('li a').click(function(){
     var initials = $(this).find('span.initials').text();
     if (initials.indexOf("S") > -1 || initials.indexOf("s") > -1) {
         $(this).css("background-color", "pink");
+    } else {
+        $(this).remove();
     }
 });
