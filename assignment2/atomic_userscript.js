@@ -11,9 +11,8 @@
 $('li a').removeAttr('href');
 
 $('li a').click(function(){
-    var firstLetter = $('li a div.visible-hover span.employee-full-name').text();
-    alert(firstLetter);
-    if (firstLetter.charAt(0) == 'S') {
+    var initials = $(this).find('span.initials').text();
+    if (initials.indexOf("S") > -1 || initials.indexOf("s") > -1) {
         $(this).css("background-color", "pink");
     }
 });
