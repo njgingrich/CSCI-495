@@ -8,7 +8,7 @@
 // @copyright    2015+
 // ==/UserScript==
 
-$('li a').click(function(){
+$('li.development a').click(function(){
     $(this).removeAttr('href');
     var initials = $(this).find('span.initials').text();
     if (initials.indexOf("S") > -1 || initials.indexOf("s") > -1) {
