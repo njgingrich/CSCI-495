@@ -15,6 +15,6 @@ $('li a').click(function(){
     if (initials.indexOf("S") > -1 || initials.indexOf("s") > -1) {
         $(this).css("background-color", "pink");
     } else {
-        $(this).remove();
+        $(this).closest('li').remove();
     }
 });
