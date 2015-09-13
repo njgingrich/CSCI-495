@@ -3,7 +3,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="page.js"></script>
 </head>
-  
+
 <style>
   ul {
     list-style-type: none;
@@ -19,14 +19,60 @@
     background-color: #0c2340;
     color: #FFF;
   }
+
+  #csci245 {
+    display: none;
+  }
+  #csci255 {
+    display: none;
+  }
+  #csci495 {
+    display: none;
+  }
+  #math131 {
+    display: none;
+  }
+  #thea210 {
+    display: none;
+  }
+
+  .menu {
+    list-style-type: none;
+    list-style-position:outside;
+  }
+  .course-info {
+    padding: 0.5em 0 0 2em;
+  }
 </style>
 
   <h1>Courses for Nathan Gingrich</h1>
-  <ul>
-    <li>CSCI 245</li>
-    <li>CSCI 255</li>
-    <li>CSCI 495</li>
-    <li>MATH 131</li>
-    <li>THEA 210</li>
+  <ul class="menu">
+    <li><a href="#csci245">CSCI 245</a></li>
+    <li><a href="#csci255">CSCI 255</a></li>
+    <li><a href="#csci495">CSCI 495</a></li>
+    <li><a href="#math131">MATH 131</a></li>
+    <li><a href="#thea210">THEA 210</a></li>
   </ul>
+  <div class="course-info">
+    <div id="csci245">
+      <h3>CSCI 245</h3>
+
+    </div>
+    <div id="csci255">
+      <h3>CSCI 255</h3>
+
+    </div>
+    <div id="csci495">
+      <h3>CSCI 495</h3>
+
+    </div>
+    <div id="math131">
+      <h3>MATH 131</h3>
+
+    </div>
+    <div id="thea210">
+      <h3>THEA 210</h3>
+
+    </div>
+  </div>
 </html>
