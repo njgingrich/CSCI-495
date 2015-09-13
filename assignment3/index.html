@@ -8,16 +8,28 @@
   ul {
     list-style-type: none;
     overflow: hidden;
+    text-align: center;
+  }
+  body {
+    width: 80%;
+    margin: auto;
   }
   li {
     background-color: #e35205;
-    display: block;
-    float: left;
-    padding: 2em;
+    display: inline-block;
+    padding: 2em 1em 2em 1em;
   }
   li:hover {
-    background-color: #0c2340;
+    background-color: #0c2340!important;
     color: #FFF;
+  }
+  a:link {
+    color: #FFF;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #FFF;
+    text-decoration: none;
   }
 
   #csci245 {
@@ -37,14 +49,18 @@
   }
 
   .menu {
+    background-color: #e35205;
     list-style-type: none;
     list-style-position:outside;
+    padding: 0;
+    margin: auto;
   }
   .course-info {
     padding: 0.5em 0 0 2em;
   }
 </style>
 
+<body>
   <h1>Courses for Nathan Gingrich</h1>
   <ul class="menu">
     <li><a href="#csci245">CSCI 245</a></li>
@@ -56,23 +72,32 @@
   <div class="course-info">
     <div id="csci245">
       <h3>CSCI 245</h3>
-
+      <p>This course provides an introduction to several different programming language paradigms and their approaches to problem solving.
+         This will include a system level language utilizing memory allocation and pointers, a scripting language, a functional language
+         and a declarative language. Students will develop several extensive programs in these languages.</p>
     </div>
     <div id="csci255">
       <h3>CSCI 255</h3>
-
+      <p>An introduction to the discrete mathematical structures that are fundamental to the field of Computer Science.
+         Topics include propositional logic, sets, Boolean algebra, switching circuits, functions, relations, and combinatorics.</p>
     </div>
     <div id="csci495">
       <h3>CSCI 495</h3>
-
+      <p>This course gives an introduction to single page web applications and how to build them, using Ember.js to
+         develop the application. Studnents will be introduced to concepts like JQuery and Git.</p>
     </div>
     <div id="math131">
       <h3>MATH 131</h3>
-
+      <p>This course provides an overview to calculus. Topics include functions, limits, continuity,
+         differentiation, integration, and applications of the derivative and integral.
     </div>
     <div id="thea210">
       <h3>THEA 210</h3>
-
+      <p>This course is an introduction to the fundamentals of technical production in the performing arts.
+         Areas of study will include scenery construction, drafting, scene painting, properties, and costume construction.
+         Students will examine the theatre plant and the collaborative process and will be provided with a solid
+         understanding of theatre terminology.</p>
     </div>
   </div>
+</body>
 </html>
